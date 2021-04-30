@@ -77,6 +77,7 @@ GEM
       aws-sigv4 (~> 1.1)
     aws-sigv4 (1.2.3)
       aws-eventstream (~> 1, >= 1.0.2)
+    bcrypt (3.1.16)
     bootsnap (1.7.2)
       msgpack (~> 1.0)
     builder (3.2.4)
@@ -132,7 +133,11 @@ GEM
     i18n (1.8.9)
       concurrent-ruby (~> 1.0)
     jmespath (1.4.0)
-    jwt (2.2.2)
+    jwt (1.5.6)
+    knock (2.1.1)
+      bcrypt (~> 3.1)
+      jwt (~> 1.5)
+      rails (>= 4.2)
     listen (3.4.1)
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
@@ -240,6 +245,7 @@ DEPENDENCIES
   config
   dotenv-rails
   jwt
+  knock
   listen (~> 3.3)
   mini_magick
   mysql2 (~> 0.5)

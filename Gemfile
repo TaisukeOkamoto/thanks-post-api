@@ -29,8 +29,9 @@ gem 'rack-cors'
 gem 'mini_magick'
 gem 'aws-sdk-s3', require: false
 
-gem 'jwt'
 gem 'dotenv-rails'
+gem 'knock'
+gem 'jwt'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
