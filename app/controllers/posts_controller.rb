@@ -16,6 +16,9 @@ class PostsController < ApplicationController
         user_id = current_user.id
         @post = Post.new(
             content: params[:content],
+            title: params[:title],
+            date: params[:date],
+            person: params[:person],
             user_id: user_id,
         )
         @post.image = image
