@@ -74,3 +74,4 @@ yarn-debug.log*
 /storage
 /config/settings.local.yml
 /log
+/config/master.key
