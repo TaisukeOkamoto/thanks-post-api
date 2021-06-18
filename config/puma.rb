@@ -19,9 +19,6 @@ worker_timeout 3600 if ENV.fetch("RAILS_ENV", "development") == "development"
 # socketの設定を追記
 bind "unix://#{Rails.root}/tmp/sockets/puma.sock"
 
-# デーモン化（バックグラウンドでRailsを起動）
-daemonize
-
 # Specifies the `environment` that Puma will run in.
 #
 environment ENV.fetch("RAILS_ENV") { "development" }
