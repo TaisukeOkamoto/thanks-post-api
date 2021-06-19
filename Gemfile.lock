@@ -134,7 +134,6 @@ GEM
       concurrent-ruby (~> 1.0)
     jmespath (1.4.0)
     jwt (1.5.6)
-    kgio (2.11.3)
     knock (2.1.1)
       bcrypt (~> 3.1)
       jwt (~> 1.5)
@@ -199,7 +198,6 @@ GEM
       rake (>= 0.8.7)
       thor (~> 1.0)
     rainbow (3.0.0)
-    raindrops (0.19.1)
     rake (13.0.3)
     rb-fsevent (0.10.4)
     rb-inotify (0.10.1)
@@ -234,9 +232,6 @@ GEM
     tzinfo (2.0.4)
       concurrent-ruby (~> 1.0)
     unicode-display_width (2.0.0)
-    unicorn (5.8.0)
-      kgio (~> 2.6)
-      raindrops (~> 0.7)
     websocket-driver (0.7.3)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.5)
@@ -265,7 +260,6 @@ DEPENDENCIES
   rubocop-rails
   spring
   tzinfo-data
-  unicorn
 
 RUBY VERSION
    ruby 2.7.0p0
