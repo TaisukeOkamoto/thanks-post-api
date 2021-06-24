@@ -22,7 +22,7 @@ Knock.setup do |config|
   # config.token_audience = nil
 
   ## If using Auth0, uncomment the line below
-  config.token_audience = -> { ENV["AUTH0_CLIENT_ID"] }
+  config.token_audience = -> { ENV["AUTH_CLIENT_ID"] }
 
   ## Signature algorithm
   ## -------------------
@@ -32,7 +32,7 @@ Knock.setup do |config|
   ## Default:
   config.token_signature_algorithm = 'RS256'
 
-  jwks_raw = Net::HTTP.get URI(ENV['AUTH0_JWKS'])
+  jwks_raw = Net::HTTP.get URI(ENV['AUTH_JWKS'])
   jwks_keys = Array(JSON.parse(jwks_raw)['keys'])
   config.token_public_key = OpenSSL::X509::Certificate.new(
     Base64.decode64(jwks_keys[0]['x5c'].first)).public_key
