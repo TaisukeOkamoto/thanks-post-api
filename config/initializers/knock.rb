@@ -22,7 +22,7 @@ Knock.setup do |config|
   # config.token_audience = nil
 
   ## If using Auth0, uncomment the line below
-  config.token_audience = -> { ENV["AUTH_CLIENT_ID"] }
+  config.token_audience = -> { ENV["AUTH_CLIENT_ID_PRODUCTION"] }
 
   ## Signature algorithm
   ## -------------------
