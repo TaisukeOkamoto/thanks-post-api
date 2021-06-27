@@ -34,7 +34,7 @@ gem 'knock'
 gem 'jwt'
 
 group :production, :staging do
-    # gem 'unicorn'
+    gem 'unicorn'
 end
 
 group :development, :test do
